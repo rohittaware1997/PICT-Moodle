@@ -1,0 +1,38 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  display: none;
+  margin : 0px;
+}
+
+input[type="radio"]+label:before {
+  content: "";
+  /* create custom radiobutton appearance */
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  margin-right: 3px;
+  /* background-color only for content */
+  background-clip: content-box;
+  border: 2px solid #bbbbbb;
+  background-color: #e7e6e7;
+  border-radius: 50%;
+  margin : 0px;
+}
+
+/* appearance for checked radiobutton */
+input[type="radio"]:checked + label:before {
+  background-color: #93e026;
+}
+
+/* optional styles, I'm using this for centering radiobuttons */
+label {
+    margin : 0px;
+  display: flex;
+  align-items: center;
+}

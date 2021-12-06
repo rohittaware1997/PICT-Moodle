@@ -1,0 +1,57 @@
+frontend : 
+
+page1 ==>
+
+1. learn tomcat apache serverlet 
+2. make login page and hardcode username and password
+3. check for validation on login
+
+
+page2 ==>
+
+1. basic layout like feedback form
+2. leftmost upper corner teacher name
+3. sidebar entries from database (it should be runtime displayed according to UserID)
+
+how to display from SidebarFrame to MainFrame
+
+1. check which link is clicked
+2. save variables for GroupCode and SubjectCode
+3. Display Content according to the SubjectCode
+4. button to add a new assignment
+   --- check if respective assignment table exist in assignmentBool Table and if not then create new table for particular Assignment else if exists, add new entries containing respective subject code and groupcode
+
+   on click, take assignmentno as input 
+
+page3 ==>
+
+1. editable table containing all the entries from respective AssignmentTable
+2. Add/modify values to respective AssignmentTable
+
+
+backend : 
+1. LoginTable
+	attributes : UserID, Password;
+
+2. UserInfo
+	attributes : UserID, UserName, SubjectCode, GroupCode
+
+3. SubjectTable 
+	attributes :  SubjectCode, SubjectName
+
+4. GroupTable
+	attributes : GroupCode, GroupName
+
+5. 
+Create Dynamically such tables
+Assignment_01 
+	attributes : SubjectCode, RollNo, attributes from Record Book
+
+.....
+
+Assignment_n 
+	attributes : SubjectCode, RollNo, attributes from Record Book
+
+6. AssignmentBool
+	attributes : AssignmentName, Bool
+
